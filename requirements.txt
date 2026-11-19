@@ -1,0 +1,7 @@
+# IT-aanhuis Helpdesk AI - dependencies
+# customtkinter : de GUI
+# Pillow        : logo + glassy achtergrond
+# De rest (HTTP, threads) is Python standaardbibliotheek.
+customtkinter>=5.2.0
+Pillow>=9.0.0
+psutil>=5.9.0

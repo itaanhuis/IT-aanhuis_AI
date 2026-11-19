@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "itaanhuis-helpdesk-ai"
+version = "1.0.0"
+description = "IT-aanhuis Helpdesk AI - lokale Nederlandstalige helpdesk-assistent (Windows, Ollama)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["customtkinter>=5.2.0", "Pillow>=9.0.0"]
+
+[project.scripts]
+it-aanhuis = "itaanhuis.__main__:main"
+
+[tool.setuptools]
+packages = ["itaanhuis", "itaanhuis.gui"]
+py-modules = ["it_aanhuis"]
+
+[tool.setuptools.package-data]
+"itaanhuis" = ["assets/*.png"]
